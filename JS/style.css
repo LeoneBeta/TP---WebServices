@@ -2,7 +2,7 @@
     margin: 0px;
     padding: 0px;
     font-family: sans-serif;
-    background-color: #d1d8e0;
+    background-color: #535c68;
 }
 
 div{
@@ -17,7 +17,7 @@ input{
     font-size: 30px;
     text-align: center;
     background: rgba(185, 179, 179, 0.233);
-    box-shadow: 5px 5px 5px grey;
+    box-shadow: 5px 5px 5px rgb(59, 59, 59);
 }
 button{
     position: relative;
@@ -27,8 +27,8 @@ button{
     border-radius: 50px;
     width: 70px;
     height: 70px;
-    background-color: #fc5c65;
-    color: #d1d8e0;
+    background-color: #e056fd;
+    color: #535c68;
     font-size: 20px;
 }
 
@@ -44,7 +44,7 @@ button{
 }
 
 .dinamico{
-    color: #fc5c65;
+    color: #e056fd;
     list-style: none;
     font-size: 50px;
 }
@@ -54,9 +54,9 @@ button{
     width: 100%;
     height: 100%;
     left: 0;
-    border-left: 2px solid #fc5c65;
+    border-left: 2px solid #e056fd;
     animation: typing 1.5s steps(10 ) infinite;
-    background: #d1d8e0;
+    background: #535c68;
 }
 
 @keyframes typing{
