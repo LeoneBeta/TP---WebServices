@@ -27,18 +27,6 @@ def is_valid_ip(ip):
     except ValueError:
         return False
 
-def callTeste(ipDst):
-    #Link completo para API IPInfoDB
-    completeLink = urlIpInfo_1 + ipDst + urlIpInfo_2
-
-    req = requests.get(completeLink)
-    resp = json.loads(req.text)
-
-    currentIP = {"IP": resp["ipAddress"], "Coord": {"lat": resp["latitude"], "lon": resp["longitude"]}}
-
-    list_Ips.append(currentIP)
-    return list_Ips
-
 def callApi(reply):
     #Link completo para API IPInfoDB
     completeLink = urlIpInfo_1 + reply.src + urlIpInfo_2
@@ -77,7 +65,7 @@ def myTraceroute(ipDst):
 def getRoute(ipDst):
 
     #Reset da lista
-    list_Ips.clear
+    list_Ips.clear()
 
     return json.dumps(myTraceroute(ipDst))
 
