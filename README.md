@@ -33,7 +33,8 @@
     contém o link para a API.
     
 <~~~~ ## A API IPifoDB ## ~~~~>
-A API de geolocalização consta com alguns requisitos para seu funcionamento, incluindo eles:
+
+    A API de geolocalização consta com alguns requisitos para seu funcionamento, incluindo eles:
 
     Link Utilizado -> https://api.ipinfodb.com/v3/ip-city?key=[key]&ip=[ip_request]  
     A chave ID de cadastro -> f5ad2b83006363b9227f48569c02468389c49dd65363884ef06598945e9d187d
@@ -60,7 +61,9 @@ A API de geolocalização consta com alguns requisitos para seu funcionamento, i
         $ pip install -r requirements.txt
 
 <~~~~ ## IPs PARA TESTES ## ~~~~>
+
     IPs para teste:
+
         www.google.com      -> 8.8.8.8
         cpentalk.com        -> 104.21.11.36
         www.youtube.com     -> 142.251.128.14
@@ -68,6 +71,7 @@ A API de geolocalização consta com alguns requisitos para seu funcionamento, i
         stackoverflow.com   -> 151.101.129.69
 
 <~~~~~~~~~~~ ## APIs UTILIZADAS ## ~~~~~~~~~~~>
+
     API geolocalização por IP, utilizada para fazer as requisições de localização do sistema
 
-IPInfoDB -> https://www.ipinfodb.com/
+    IPInfoDB -> https://www.ipinfodb.com/
