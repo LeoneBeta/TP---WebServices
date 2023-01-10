@@ -1,17 +1,25 @@
 # Trabalho prático individual - WebServices
-    Com a utilização da biblioteca scapy, que faz a construção do cabeçalho do pacote, o projeto deve ser executado em modo root, no linux podemos colocar o comando sudo ao inicio da linha de comando. (Deve-se fazer uma reconfiguração no comando sudo para execução de todas as bibliotecas de forma correta)
+    Com a utilização da biblioteca scapy, que faz a construção do cabeçalho do pacote,
+    o projeto deve ser executado em modo root, no linux podemos colocar o comando sudo
+    ao inicio da linha de comando. (Deve-se fazer uma reconfiguração no comando sudo
+    para execução de todas as bibliotecas de forma correta)
 
     Reconfiguração do "sudo"
     
         $ sudo visudo
         
-        Alterar a linha "Default   env_reset" para "Default   !env_reset"
-        Comentar a linha "#Defaults       secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin""
+        Alterar a linha:
+            "Default  env_reset" para "Default   !env_reset"
+        
+        Comentar a linha:
+            "#Defaults  secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin""
 
         Saia do Vim salvando o arquivo.
 
-        (Não recomendo fazer essa reconfiguração caso não tenha um conhecimento prévio sobre Linux. Faça por sua conta em risco.
-        Não esqueça de voltar o arquivo para seu estado original quando terminar de testar o projeto, voltando as duas linhas alteradas ao que eram antes.)
+        (Não recomendo fazer essa reconfiguração caso não tenha um conhecimento prévio sobre
+        Linux. Faça por sua conta em risco.
+        Não esqueça de voltar o arquivo para seu estado original quando terminar de testar o
+        projeto, voltando as duas linhas alteradas ao que eram antes.)
 
 
 
@@ -20,7 +28,9 @@
     $ sudo python3 tr-map.py
 
 
-    Este projeto contém algumas bibliotecas python em sua estrutura e APIs externas para seu funcionamento, abaixo há algumas instruções para a instalação dessas bibliotecas. Também contém o link para a API.
+    Este projeto contém algumas bibliotecas python em sua estrutura e APIs externas para seu
+    funcionamento, abaixo há algumas instruções para a instalação dessas bibliotecas. Também
+    contém o link para a API.
     
 <~~~~ ## A API IPifoDB ## ~~~~>
 A API de geolocalização consta com alguns requisitos para seu funcionamento, incluindo eles:
