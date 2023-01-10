@@ -20,6 +20,8 @@ list_Ips = []
 urlIpInfo_1 = 'https://api.ipinfodb.com/v3/ip-city?key=f5ad2b83006363b9227f48569c02468389c49dd65363884ef06598945e9d187d&ip='
 urlIpInfo_2 = '&format=json'
 
+
+
 def is_valid_ip(ip):
     try:
         ipaddress.IPv4Address(ip)
@@ -36,9 +38,10 @@ def callApi(reply):
     
     time.sleep(0.5)
 
-    currentIP = {"IP": resp["ipAddress"], "Coord": {"lat": resp["latitude"], "lon": resp["longitude"]}}
+    if resp["countryName"] != "-":
+        currentIP = {"IP": resp["ipAddress"], "Country": {"CName": resp["countryName"], "RName": resp["regionName"]}}
+        list_Ips.append(currentIP)
 
-    list_Ips.append(currentIP)
     return list_Ips
 
 def myTraceroute(ipDst):
@@ -58,7 +61,6 @@ def myTraceroute(ipDst):
         #Resposta com IP de destino
         if reply.type == 3:
             break
-
     return list_Ips  
 
 @app.route('/route/<ipDst>', methods=['GET'])

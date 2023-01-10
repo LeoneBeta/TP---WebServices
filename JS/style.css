@@ -79,4 +79,32 @@ button{
     height: 100px;
 }
 
-#map { height: 100vh; }
+.card {
+    position: relative;
+    width: 20rem;
+    height: 30rem;
+    background-size: cover;
+    background-color: #dcdde1;
+    border-radius: 20px;
+    background-position: center center;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px rgb(59, 59, 59);
+}
+
+.card__inner {
+    background-color: #8d8d8d;
+    color: black;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+    opacity: 0;
+    padding: 2rem 1.3rem 2rem 2rem;
+    transition: all 0.4s ease 0s;
+}
+
+.card__inner h2 {
+    margin-top: 1rem;
+}
